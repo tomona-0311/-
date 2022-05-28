@@ -104,12 +104,12 @@ HeaderLogo {
     display: none;
 }
 .HeaderNavList {
+  
     align-items: center;
     display: flex;
     justify-content: space-between;
 }
 ul, ol {
-    font-size: 45vmin;
     list-style: none;
 }/*黒チョボ消す*/
 
@@ -326,10 +326,44 @@ video {
 }
 
 
+.About__title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 0;
+    margin-left: 32px;
+}
 
+.About__title h2 {
+    font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 54px;
+    width: 100%;
+}
+.About {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
 
-
-
+.About__button {
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+}
 
 
 
