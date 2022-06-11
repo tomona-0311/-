@@ -1,4 +1,6 @@
 
+
+
 body {
     color: #000;
     font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
@@ -253,6 +255,16 @@ h2 {
 .FirstViewContent__buttons a:visited {
     color: #fff;
 }
+
+
+@media screen and (min-width: 768px){
+.HeaderLogo {
+    transition: opacity .2s;
+}}
+
+
+
+
 @media screen and (min-width: 768px)
 .FirstViewContent__buttons a {
     transition: opacity .2s;
@@ -370,6 +382,14 @@ video {
 }
 
 @media screen and (max-width: 767px){
+.FirstView {
+    background-image: none;
+    padding-top: 0;
+    padding-bottom: 35px;
+}
+}
+
+@media screen and (max-width: 767px){
 .Header {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -392,12 +412,38 @@ video {
     opacity: .8;
 }
 
+
+
+
+@media screen and (max-width: 767px){
+.FirstView__container {
+    margin-top: -45vw;
+}
+}
+
+@media screen and (max-width: 767px){
+.FirstViewContent {
+    margin-bottom: 20px;
+    width: 100%;
+}}
+
+@media screen and (max-width: 767px){
+.FirstView__container {
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
 @media screen and (min-width: 768px){
 .FirstViewContent__buttons a:hover {
     opacity: .8;
 }}
 
 
-
-
-
+@media screen and (max-width: 767px){
+.FirstView {
+    background-image: none;
+    padding-top: 0;
+    padding-bottom: 35px;
+}
+}
