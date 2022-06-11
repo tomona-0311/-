@@ -202,6 +202,10 @@ body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4
     padding-bottom: 28px;
 }
 
+
+
+
+
 .FirstView__container {
     max-width: 1140px;
     padding-left: 50px;
@@ -364,23 +368,34 @@ video {
     width: 100%;
     position: absolute;
 }
-@media screen and (max-width: 767px)
+
+@media screen and (max-width: 767px){
 .Header {
     padding-top: 15px;
     padding-bottom: 15px;
+    display: block;
 }
-@media screen and (max-width: 1080px)
+
+@media screen and (max-width: 1080px){
 .Header {
     background-color: #fff;
     z-index: 10;
 }
-@media screen and (max-width: 1080px)
+
+@media screen and (max-width: 1080px){
 .Header--common {
     position: fixed !important;
 }
 
+@media screen and (min-width: 768px){
+.HeaderNavListItem__button:hover {
+    opacity: .8;
+}
 
-
+@media screen and (min-width: 768px){
+.FirstViewContent__buttons a:hover {
+    opacity: .8;
+}}
 
 
 
