@@ -196,6 +196,9 @@ body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4
     padding: 0;
 }
 
+
+
+/*男の子*/
 .FirstView {
     background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
     background-size: cover;
@@ -265,10 +268,10 @@ h2 {
 
 
 
-@media screen and (min-width: 768px)
+@media screen and (min-width: 768px){
 .FirstViewContent__buttons a {
     transition: opacity .2s;
-}
+}}/*変更場所０６１２*/
 .FirstViewContent__buttons a {
     align-items: center;
     background-color: #f79214;
