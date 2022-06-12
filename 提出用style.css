@@ -447,3 +447,7 @@ video {
     padding-bottom: 35px;
 }
 }
+.FirstView__main-image--sp {
+    display: none;
+}
+}
