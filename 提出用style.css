@@ -1,12 +1,6 @@
 
 
 
-body {
-    color: #000;
-    font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-}
 
 body {
     -webkit-font-smoothing: antialiased;
@@ -182,13 +176,7 @@ ul, ol {
     padding: 0 20px;
 }
 
-.HeaderContainer {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 36px;
-    max-width: 100%;
-    position: relative;
-}
+
 /*写真*/
 
 body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4, h5, h6, form, select {
@@ -376,13 +364,26 @@ video {
     line-height: 26px;
 }
 
-
-
-
-.Header {
+/*新規*/
+@media screen and (max-width: 1080px){
+.HeaderNavList {
+    overflow-y: scroll;
+    position: fixed;
+    top: 60px;
+    left: 100%;
     width: 100%;
-    position: absolute;
-}
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 75px;
+    transition: transform .5s;
+    z-index: 99;
+    background-color: rgba(0,0,0,.8);
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+}}
+
+
+
 
 @media screen and (max-width: 767px){
 .FirstView {
@@ -400,23 +401,19 @@ video {
 }
 
 @media screen and (max-width: 1080px){
-.Header {
-    background-color: #fff;
-    z-index: 10;
-}
 
-@media screen and (max-width: 1080px){
-.Header--common {
-    position: fixed !important;
-}
+
 
 @media screen and (min-width: 768px){
 .HeaderNavListItem__button:hover {
     opacity: .8;
 }
-
-
-
+@media screen and (max-width: 1080px){
+.Header {
+    background-color: #fff;
+    z-index: 10;
+}
+}
 
 @media screen and (max-width: 767px){
 .FirstView__container {
@@ -443,6 +440,7 @@ video {
 }}
 
 
+
 @media screen and (max-width: 767px){
 .FirstView {
     background-image: none;
@@ -453,4 +451,294 @@ video {
 .FirstView__main-image--sp {
     display: none;
 }
+}
+
+/*新規*/
+@media screen and (max-width: 1080px){
+.HeaderNavHamburger {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    z-index: 100;
+}}
+
+.HeaderLogo__image--sp {
+    display: none;
+    height: 16px;
+    width: auto;
+}
+
+@media screen and (max-width: 1080px){
+    background-color: #fff;
+    z-index: 10;
+}}
+@media screen and (max-width: 1080px){
+.Header--common {
+    position: fixed !important;
+}
+}
+
+.HeaderLogo__image--sp {
+    display: none;
+    height: 16px;
+    width: auto;
+}
+
+
+
+
+
+@media screen and (max-width: 767px){
+.HeaderLogo__image--sp {
+    display: block;
+}}
+
+
+@media screen and (min-width: 768px){
+.HeaderLogo {
+    transition: opacity .2s;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}}
+
+
+.HeaderLogo__image HeaderLogo__image--sp ls-is-cached lazyloaded{ 
+    display: none;
+    height: 16px;
+    width: auto;
+}}
+
+
+/*ロゴのダブりを削除*/
+.HeaderLogo__image--sp {
+    display: none;
+    height: 16px;
+    width: auto;
+}
+
+@media screen and (max-width: 1080px){
+.HeaderNavList {
+    overflow-y: scroll;
+    position: fixed;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 75px;
+    transition: transform .5s;
+    z-index: 99;
+    background-color: rgba(0,0,0,.8);
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+}
+
+}
+
+@media screen and (max-width: 1080px){
+.Header {
+    background-color: #fff;
+    z-index: 10;
+}}
+
+@media screen and (max-width: 1080px){
+.Header--common {
+    position: fixed !important;
+}}
+ul, ol {
+    list-style: none;
+}
+
+
+
+/*hederの改行を防ぐ*/
+body {
+    color: #000;
+    font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1080px){
+.HeaderNavHamburger {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    z-index: 100;
+}}
+
+@media screen and (max-width: 1080px){
+.HeaderNavHamburger__line {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transform: translate(0,-50%);
+    border-radius: 10px;
+    transition: top .2s,transform .2s,opacity .3s;
+}}
+
+@media screen and (max-width: 1080px){
+.HeaderNavHamburger__line:first-child {
+    top: 0;
+}}
+@media screen and (max-width: 1080px){
+.HeaderNavHamburger__line {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transform: translate(0,-50%);
+    border-radius: 10px;
+    transition: top .2s,transform .2s,opacity .3s;
+}}
+
+@media screen and (max-width: 1080px){
+.HeaderNavHamburger__line:last-child {
+    top: 100%;
+}}
+
+@media screen and (max-width: 1080px){
+.HeaderNavHamburger__line {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transform: translate(0,-50%);
+    border-radius: 10px;
+    transition: top .2s,transform .2s,opacity .3s;
+}}
+
+/*男の子がレスポンシブ対応腕表示される*/
+@media screen and (max-width: 767px){
+.FirstView__main-image--sp {
+    display: block;
+}}
+
+/*この下二つは「最短５ヶ月間で』のコメントを綺麗にレイアううとをしてくれる*/
+@media screen and (max-width: 767px){
+.FirstView__container {
+    margin-top: -45vw;
+}}
+@media screen and (max-width: 767px){
+.FirstView__container {
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}}
+
+/*文字のレイアウトを綺麗にしてくれる*/
+@media screen and (max-width: 767px){
+.FirstViewContent {
+    margin-bottom: 20px;
+    width: 100%;
+}}
+@media screen and (max-width: 767px){
+main {
+    padding-top: 52px;
+}}
+@media screen and (max-width: 767px){
+.FirstViewContent__images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+}}
+@media screen and (max-width: 767px){
+.FirstViewContent__title {
+    font-size: 25px;
+    line-height: 36px;
+    margin-left: calc(((100vw - 100%)/2)*-1);
+    margin-right: calc(((100vw - 100%)/2)*-1);
+}}
+@media screen and (max-width: 767px){
+.FirstViewContent__buttons a:first-of-type {
+    margin-right: 0;
+}}
+@media screen and (max-width: 767px){
+.FirstViewContent__buttons a:last-of-type {
+    display: none;
+}}
+@media screen and (max-width: 767px){
+.FirstViewContent__buttons a {
+    font-size: 14px;
+    width: 100% !important;
+}}
+@media screen and (max-width: 767px){
+.FirstViewContent__images img {
+    width: 27.5%;
+}}
+
+
+/*男の子の縮小に伴って画面は変わらず画像だけ縮小する*/
+.FirstView__main-image {
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px){
+.About {
+    flex-direction: column;
+}}
+@media screen and (max-width: 1024px){
+.About__video {
+    margin-bottom: 16px;
+    width: 75%;
+}}
+
+
+.About__title h2, .About__title p {
+    color: #fff;
+    text-align: left;
+}
+.About__title h2>span {
+    font-family: 'Lato',sans-serif;
+    font-size: 38px;
+}
+.About__title h2 span {
+    font-size: 50px;
+    font-weight: 900;
+}
+@media screen and (max-width: 1024px){
+.About__title {
+    margin-left: 0;
+    width: 75%;
+}}
+
+/*とはを一行にする*/
+.About__title br {
+    display: none;
+}
+div {
+    display: block;
+}
+
+@media screen and (max-width: 767px){
+.About__title {
+    margin-bottom: 0;
+    width: 100%;
+}}
+
+@media screen and (max-width: 767px){
+.About__title {
+    margin-bottom: 45px;
+}}
+@media screen and (max-width: 767px){
+.About__video {
+    width: 100%;
+}}
+
+.About__title:after {
+    display: none;
 }
