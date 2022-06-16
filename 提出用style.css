@@ -830,7 +830,7 @@ html {
     transition: top .2s,transform .2s,opacity .3s;
 }}
 
-media screen and (max-width: 1080px){
+@media screen and (max-width: 1080px){
 .is-active .HeaderNavHamburger__line:last-child {
     top: 50%;
     transform: translate(0,-50%) rotate(-45deg);
@@ -855,18 +855,3 @@ media screen and (max-width: 1080px){
     transform: translate3d(-100%,0,0);
 }}
 
-@media screen and (max-width: 1080px){
-.HeaderNavList.is-active {
-    transform: translate3d(-100%,0,0);
-}}
-
-@media screen and (max-width: 1080px){
-.HeaderNavList.is-active {
-    transform: translate3d(-100%,0,0);
-}}
-@media screen and (max-width: 1080px){
-.is-active .HeaderNavHamburger__line:last-child {
-    top: 50%;
-    transform: translate(0,-50%) rotate(-45deg);
-    opacity: 1;
-}}
