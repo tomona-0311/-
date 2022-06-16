@@ -777,6 +777,7 @@ html {
 }}
 
 /*ボタン*/
+
 @media screen and (max-width: 1080px){
 .HeaderNavListItem__link>span:first-child {
     font-size: 16px;
@@ -790,6 +791,7 @@ html {
     color: #f79214;
     letter-spacing: 2px;
 }
+
 @media screen and (max-width: 1080px){
 .HeaderNavListItem__link {
     padding: 20px 0;
@@ -799,24 +801,11 @@ html {
     margin-right: 0;
 }}
 
-@media screen and (min-width: 768px){
-.HeaderNavListItem__button {
-    transition: opacity .2s;
-}}
 
 
-@media screen and (max-width: 1080px){
-.is-active .HeaderNavHamburger__line:first-child {
-    top: 50%;
-    transform: translate(0,-50%) rotate(45deg);
-    opacity: 1;
-}}
-@media screen and (max-width: 1080px){
-.is-active .HeaderNavHamburger__line {
-    will-change: top;
-    transform: translate(20px,-50%);
-    opacity: 0;
-}}
+
+
+*/
 @media screen and (max-width: 1080px){
 .HeaderNavHamburger__line {
     position: absolute;
@@ -844,14 +833,13 @@ html {
 }}
 
 
-
 @media screen and (max-width: 767px){
 .HeaderNavList {
     top: 52px;
 }}
 
-@media screen and (max-width: 1080px){
-.HeaderNavList.is-active {
-    transform: translate3d(-100%,0,0);
-}}
 
+*/
+ul, ol {
+    list-style: none;
+}
