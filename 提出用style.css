@@ -1,5 +1,70 @@
+/*
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+*/
+@media screen and (min-width: 768px){
+.HeaderNavListItem__button:hover {
+    opacity: .8;
+}}
+@media screen and (min-width: 768px){
+.FirstViewContent__buttons a:hover {
+    opacity: .8;
+}}
+@media screen and (min-width: 768px){
+.FirstViewContent__buttons a:hover {
+    opacity: .8;
+}}
+@media screen and (max-width: 1080px){
+.HeaderNavHamburger__line:first-child {
+    top: 0;
+}}
+@media screen and (max-width: 1080px){
+.HeaderNavHamburger__line:last-child {
+    top: 100%;
+}}
+@media screen and (max-width: 1080px){
+.HeaderNavHamburger__line {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transform: translate(0,-50%);
+    border-radius: 10px;
+    transition: top .2s,transform .2s,opacity .3s;
+}
+}
+@media screen and (max-width: 1080px){
+.HeaderNavHamburger {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    z-index: 100;
+}
+}
 
+/*これでロゴのダブりが減る上に置く順番も大事*/
+.HeaderLogo__image--sp {
+    display: none;
+    height: 16px;
+    width: auto;
+}
 
+@media screen and (max-width: 1080px){
+.Header {
+    background-color: #fff;
+    z-index: 10;
+}}
+
+@media screen and (max-width: 1080px){
+.Header--common {
+    position: fixed !important;
+}}
 
 
 body {
@@ -22,12 +87,7 @@ body {
 html {
     -webkit-text-size-adjust: 100%;
 }
-*, *:before, *:after {
-    word-break: break-all;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+
 *, *:before, *:after {
     word-break: break-all;
     -webkit-box-sizing: border-box;
@@ -46,16 +106,8 @@ html {
     padding-bottom: 20px;
     width: 100%;
 }
-*, *:before, *:after {
-    word-break: break-all;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-user agent stylesheet
-header {
-    display: block;
-}
+
+
 
 .HeaderContainer {
     display: flex;
@@ -88,9 +140,7 @@ HeaderLogo {
     display: inline-flex;
 }
 
-.HeaderNavHamburger {
-    display: none;
-}
+
 .HeaderNavList {
   
     align-items: center;
@@ -106,15 +156,12 @@ ul, ol {
     transition: opacity .2s;
 }
 .HeaderNavListItem {
-    margin-right: 45px;
+    margin-right: 40px;
 }
 .HeaderNavListItem__link {
     display: block;
 }
-a {
-    color: #000;
-    text-decoration: none;
-}
+
 li {
     text-align: -webkit-match-parent;
 }
@@ -137,12 +184,13 @@ a {
     color: #000;/*黒色に変更*/
     text-decoration: none;/*アンダーラインを消す*/
 }
-
+/*
 a:-webkit-any-link {
   
     cursor: pointer;
     
 }
+*/
 ul, ol {
     list-style: none;
 }/*黒チョボを消す*/
@@ -400,7 +448,6 @@ video {
     display: block;
 }
 
-@media screen and (max-width: 1080px){
 
 
 
@@ -408,12 +455,7 @@ video {
 .HeaderNavListItem__button:hover {
     opacity: .8;
 }
-@media screen and (max-width: 1080px){
-.Header {
-    background-color: #fff;
-    z-index: 10;
-}
-}
+
 
 @media screen and (max-width: 767px){
 .FirstView__container {
@@ -454,32 +496,16 @@ video {
 }
 
 /*新規*/
-@media screen and (max-width: 1080px){
-.HeaderNavHamburger {
-    cursor: pointer;
-    display: block;
-    position: relative;
-    width: 30px;
-    height: 21px;
-    z-index: 100;
-}}
 
-.HeaderLogo__image--sp {
-    display: none;
-    height: 16px;
-    width: auto;
-}
 
+/*
 @media screen and (max-width: 1080px){
+    .Header{
     background-color: #fff;
     z-index: 10;
 }}
-@media screen and (max-width: 1080px){
-.Header--common {
-    position: fixed !important;
-}
-}
 
+*/
 .HeaderLogo__image--sp {
     display: none;
     height: 16px;
@@ -506,11 +532,11 @@ video {
 }}
 
 
-.HeaderLogo__image HeaderLogo__image--sp ls-is-cached lazyloaded{ 
+.HeaderLogo__image HeaderLogo__image--sp { 
     display: none;
     height: 16px;
     width: auto;
-}}
+}
 
 
 /*ロゴのダブりを削除*/
@@ -522,7 +548,7 @@ video {
 
 
 
-
+/*
 @media screen and (max-width: 1080px){
 .Header {
     background-color: #fff;
@@ -533,6 +559,7 @@ video {
 .Header--common {
     position: fixed !important;
 }}
+*/
 ul, ol {
     list-style: none;
 }
@@ -547,15 +574,7 @@ body {
     font-weight: 500;
 }
 
-@media screen and (max-width: 1080px){
-.HeaderNavHamburger {
-    cursor: pointer;
-    display: block;
-    position: relative;
-    width: 30px;
-    height: 21px;
-    z-index: 100;
-}}
+
 
 @media screen and (max-width: 1080px){
 .HeaderNavHamburger__line {
@@ -805,7 +824,7 @@ html {
 
 
 
-*/
+
 @media screen and (max-width: 1080px){
 .HeaderNavHamburger__line {
     position: absolute;
@@ -838,8 +857,22 @@ html {
     top: 52px;
 }}
 
+@media screen and (max-width: 1080px){
+.Header {
+    background-color: #fff;
+    z-index: 10;
+}}
 
-*/
-ul, ol {
-    list-style: none;
+@media screen and (max-width: 1080px){
+.Header--common {
+    position: fixed !important;
+}}
+
+/*
+.HeaderNavHamburger {
+    display: none;
+}*/
+user agent stylesheet
+header {
+    display: block;
 }
